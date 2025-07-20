@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <nav>
 
-        <li><Link to="/">Home</Link></li>
+        <li><Link to="/TECNO">TECNO</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/use-state-hook"> useState Hook</Link></li>

@@ -16,10 +16,10 @@ const Home = () => {
             <ReusableComponent title="POVA 7 Series Power Beyond Limits" btnText="Read More" img={km7}  />
 
             <div style={{ width: "100%", height: "2px", backgroundColor: "black", margin: "5px 0" }}></div>
-            <ReusableComponent />
+            <ReusableComponent title="CAMON 40 Series Perfect Snap Anytime"  btnText="Read Me" img={km7}  handleClick = {handlebtn1} />
 
             <div style={{ width: "100%", height: "2px", backgroundColor: "red", margin: "5px 0" }}></div>
-            <ReusableComponent />
+            <ReusableComponent title="CAMON 40 Series Perfect Snap Anytime"  btnText="Read Me" img={km7}  handleClick = {handlebtn1} /> 
 
             <div style={{ width: "100%", height: "2px", backgroundColor: "yellow", margin: "5px 0" }}></div>
         </>
