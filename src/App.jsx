@@ -6,6 +6,8 @@ import About from './page/About';
 import Contact from './page/Contact';
 import Footer from './page/Footer';
 import StateHook from './Hooks/StateHook';
+import Conditions from './components/Conditions';
+import Card from './components/Card';
 const App = () => {
   return (
     <>
@@ -16,6 +18,8 @@ const App = () => {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/use-state-hook' element={<StateHook />} />
+          <Route path='/condition' element={<Conditions/>}></Route>
+            <Route path='/card-using-map' element={<Card/>}/>
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
