@@ -13,6 +13,8 @@ const Navbar = () => {
         <li><Link to="">Info</Link></li>
         <li><Link to="/condition">Conditions</Link></li>
         <li><Link to="/card-using-map">Card using Map Method</Link></li>
+        <li><Link to="/cards-map">Card Map</Link></li>
+        <li><Link to="/forms"> FormHandling</Link></li>
       </nav >
     </>
   )

@@ -8,6 +8,8 @@ import Footer from './page/Footer';
 import StateHook from './Hooks/StateHook';
 import Conditions from './components/Conditions';
 import Card from './components/Card';
+import CardsMap from './components/CardsMap';
+import FormHandling from './components/FormHandling';
 const App = () => {
   return (
     <>
@@ -20,6 +22,8 @@ const App = () => {
           <Route path='/use-state-hook' element={<StateHook />} />
           <Route path='/condition' element={<Conditions/>}></Route>
             <Route path='/card-using-map' element={<Card/>}/>
+            <Route path='/cards-map' element={<CardsMap/>}/>
+            <Route path='/forms' element={<FormHandling/>}/>
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
