@@ -15,6 +15,7 @@ const Navbar = () => {
         <li><Link to="/card-using-map">Card using Map Method</Link></li>
         <li><Link to="/cards-map">Card Map</Link></li>
         <li><Link to="/forms"> FormHandling</Link></li>
+        <li><Link to="/effect-hook"> Effect Hook</Link></li>
       </nav >
     </>
   )

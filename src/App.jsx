@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import Home from "./page/Home"
 import Navbar from './components/Navbar';
@@ -10,7 +10,9 @@ import Conditions from './components/Conditions';
 import Card from './components/Card';
 import CardsMap from './components/CardsMap';
 import FormHandling from './components/FormHandling';
+import UseEffectHook from './Hooks/UseEffectHook';
 const App = () => {
+  const [show, setShow] = useState(true)
   return (
     <>
       <BrowserRouter>
@@ -20,13 +22,20 @@ const App = () => {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/use-state-hook' element={<StateHook />} />
-          <Route path='/condition' element={<Conditions/>}></Route>
-            <Route path='/card-using-map' element={<Card/>}/>
-            <Route path='/cards-map' element={<CardsMap/>}/>
-            <Route path='/forms' element={<FormHandling/>}/>
+          <Route path='/condition' element={<Conditions />}></Route>
+          <Route path='/card-using-map' element={<Card />} />
+          <Route path='/cards-map' element={<CardsMap />} />
+          <Route path='/forms' element={<FormHandling />} />
+          <Route path='/effect-hook' element={<UseEffectHook />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
+      {/* 
+      <button onClick={() => setShow(!show)}>Show Componet</button>
+      {
+        show && (<UseEffectHook />)
+      } */}
+
     </>
   )
 }
